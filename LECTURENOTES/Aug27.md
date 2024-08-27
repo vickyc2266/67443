@@ -14,3 +14,11 @@
         let height = width + Int("5") --> causes a compile-time error for width is a non-optional integer and Int("5") is an              optional integer and may not be unwrapped successfully
     
         let height = width + Int("5")!  --> This makes Swift unwrap for there is a value
+
+
+        func sumOf(_ numbers: Int...) -> {
+            ...
+        }
+            -the _ allows the omit of external parameter name when calling the function:
+                I can do sumOf(1, 2, 3) 
+            -the three dots says to convert into an array of array
