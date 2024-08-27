@@ -17,8 +17,12 @@
 
 
         func sumOf(_ numbers: Int...) -> {
-            ...
+            .var sum = 0
+            for nums in numbers {
+                sum += nums
+            }
+            return sum
         }
             -the _ allows the omit of external parameter name when calling the function:
-                I can do sumOf(1, 2, 3) 
+                I can do sumOf(1, 2, 3) instead od sumOf(numbers: 1, 2, 3)
             -the three dots says to convert into an array of array
