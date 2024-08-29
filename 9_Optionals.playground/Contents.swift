@@ -1,5 +1,8 @@
 //: Optionals
 
+//The value Malcolm is actually wrapped in an optional
+//We can forcefully unwrap with a ! 
+  //This is only ok if we know for sure there's a value in there
 var name:String? //= "Malcolm"
 var password:String? //= "IloveInara"
 var age:Int?
@@ -8,11 +11,13 @@ var age:Int?
 //print(password)
 //print(age)
 
-// Unwrapping optionals by force
+// Unwrapping optionals by force (most of the time fo not do this and resort to safely unwrapping optional)
 //let msg = name + " is the captain of Serenity"
 //let msg = name! + " is the captain of Serenity"
 
+
 // Safely unwrapping optionals
+//if-code runs not nil, else-code runs if name == nil
 if let captain = name {
   // The value is not nil, use it with confidence
   let msg2 = captain + " is the captain of Serenity"

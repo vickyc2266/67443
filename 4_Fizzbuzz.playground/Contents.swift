@@ -11,8 +11,24 @@
  An important caveat: to receive full credit for this problem, you have to write this function _without_ using the _if_ conditional operator. (You can get partial credit using _if_, but look at 2-pattern-matching playground if you need a clue how to do this.)
  */
 
-func fizzbuzz(<#parameters#>) -> <#return type#> {
-  <#function body#>
+func fizzbuzz(_ number: Int) -> String {
+
+  switch (number%3 == 0 , number%5 == 0){
+     case (true, true):
+      return "FizzBuzz"
+
+    case (true, false):
+      return "Fizz"
+
+    case (false, true):
+      return "Buzz"
+      
+  case (false, false):
+      return String(number)
+
+  }
+
+
 
 }
 
@@ -65,9 +81,26 @@ fizzbuzz(15)     // => “FizzBuzz”
  Below you can find a sample of the function being called and what is being returned and the starting function (_may need a tweak..._)
 */
 
-func fizzbuzzAll(_ num: Any? = nil) -> String {
+func fizzbuzzAll(_ num: Any? = nil) -> String? {
   // if the number exists and can be converted to int, then do the usual
   // if not, then print "No integer passed; returning nil" and then actually return nil
+//    if (num != nil && num as ? Int){
+//        return fizzbuzz(num)
+//        
+//    }
+//    else {
+//        print ("No valid Numbers provided")
+//    }
+            
+    if let intVal = num as? Int {
+        return fizzbuzz(intVal)
+    }
+    else {
+        print("No integer passed; returning nil")
+        return nil
+    }
+    
+    
 
   
   

@@ -30,10 +30,12 @@ class NamedShape {
 
 
 //** Subclasses include their superclass name after their class name, separated by a colon **//
+//In this case Square inherits from NamedShape
 class Square: NamedShape {
   var sideLength: Double
   
   init(sideLength: Double, name: String) {
+    //Need to intialize the unique characters of self first before intializing things for the Super
     self.sideLength = sideLength
     super.init(name: name)
     numberOfSides = 4
