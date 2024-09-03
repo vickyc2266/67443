@@ -70,4 +70,8 @@ Q & A
         -order fo things: desirability(easiest) -> feasibility -> viability (hardest part)
             desirability (market trend and desire, talking to potential users and what people have to say)
             viability (hardest to prove since everything is based on assumption)
+
+    4. Niche or General for Product Segmentation
+        -Suggestion to start niche because then you cna differentiate your products and get to know what desired from your market better
+        -In 2024, there are so many different business models so we need to first get something out there that resonates with your audience instead of simply getting the features out there
         
