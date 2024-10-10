@@ -107,5 +107,11 @@ Mobile Interactions & The Lenses of Accessibility
 
 
 
+# Class Notes
+-Don't start with a class, start with a protocol
+
+
+
+
 
 
